@@ -1,14 +1,17 @@
+// apps/store/src/app/app.component.ts
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  standalone: true,
+  imports: [MatButtonModule, HeaderComponent, FooterComponent, CardsComponent],
+  templateUrl: `./app.component.html`,
+  styles: [],
 })
 export class AppComponent {
-  title = 'jwlr-nx-client';
+  title = 'jwlr';
 }

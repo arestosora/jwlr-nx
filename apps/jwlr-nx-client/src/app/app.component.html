@@ -1,1 +1,21 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="flex flex-col min-h-screen">
+  <app-header></app-header>
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('https://dummyimage.com/1200x400/000/fff');">
+      <div class="absolute inset-0 flex items-center justify-center text-white">
+        <div class="text-center">
+          <h1 class="text-4xl font-bold mb-4">New Collection</h1>
+          <button mat-raised-button color="accent">Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="container mx-auto py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Featured Products</h2>
+        <app-cards></app-cards>
+    </div>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
